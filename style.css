@@ -1,0 +1,263 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/* ------------------------------------------------- */
+/* start coding your css */
+/* ------------------------------------------------- */
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+h1{
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-row{
+    height: 150px;
+    background-color: #F7F7F7;
+    /* margin: 0px; */
+}
+
+
+
+.tabs{
+    margin: 0px 10px;
+}
+
+.bottom-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    /* font-size: 1.7em; */
+    font-weight: 700;
+    opacity: 0.75;
+}
+
+.middle-content{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.cart{
+    /* width: auto; */
+    position: absolute;
+    right: 55px;
+    /* padding: 0; */
+  
+}
+
+.row-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;    
+}
+
+.owl-item{
+    margin: 0 10px;
+}
+
+
+img{
+    width: 100%;
+}
+
+p a{
+    color: rgb(47, 9, 41);
+    font-weight: 700;
+}
+/* this will select any a tag inside p tag */
+
+img:hover{
+    opacity: 0.5;
+    transition: .3s;
+}
+
+.hamburger{
+    cursor: pointer;
+    border: none;
+    /* background-color: rgb(127, 254, 188); */
+    display: none;
+    margin: 0px 20px;
+    background-color: #F7F7F7;
+}
+button img{
+    width: 30px;
+    height: 30px;
+}
+
+.hamburger.focus{
+    outline: none;
+}
+
+.cart2{
+    display: none;
+}
+
+@media (max-width: 800px){
+
+    .cart2{
+        display: block;
+        margin-bottom: .2em;
+        margin: 0px 30px;
+        padding-bottom: .5em;
+    }
+    .cart{
+        display: none;
+    }
+    
+    .row-content{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+        /* justify-content: center; */
+        /* margin: 20px;     */
+    }
+    .links{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .links.show{
+        display: flex;
+    }
+
+    .currency{
+        display: none;
+    }
+
+    .cartText{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .header-row{
+        height: 20%;
+    }
+
+}
+
+
+.text-wrapper{
+text-align: center;
+font-size: smaller;
+margin: 20px 0px;
+opacity: 0.5;
+}
+
+.text-wrapper p{
+    margin: 20px 0px;
+}
+
+form{
+    margin-top: 30px;
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    opacity: 0.65;
+    position: absolute;
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+footer p{
+    opacity: .5;
+}
+
+.contact{
+    padding-left: 20px;
+    text-align: left;
+}
+button{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: rgb(55, 54, 54);
+    color: #F7F7F7;
+    border: none;
+    transition: .5s;
+}
+
+button:hover{
+    background-color: rgb(139, 136, 136);
+    cursor:pointer;
+}
+
